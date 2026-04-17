@@ -23,11 +23,11 @@ public class Main {
 
         for (Payable item : accountsPayable) {
             double amount = item.getPaymentAmount();
-            System.out.printf("Payment due: Rp. ", amount);
-            total += amount; // 🔥 kumpulkan total
+            System.out.printf("Payment due: Rp. %.2f%n", amount);
+            total += amount;
 
         }
         System.out.println("---------------------");
-        System.out.printf("TOTAL PAYMENT: Rp. ", total);
+        System.out.printf("TOTAL PAYMENT: Rp. %.2f%n", total);
     }
 }
